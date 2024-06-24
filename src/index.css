@@ -1,5 +1,3 @@
-@import-normalize; /* bring in normalize.css styles */
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +5,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.Form {
+  display: flex;
+  flex-direction: row;
+}
+
+.Input:first-child {
+  margin-right: 10px;
+}
+
+.Input {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #137be3;
+  width: 150px;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.Input:hover {
+  border-color: #00c9dc;
+}
+
+.Button {
+  background-color: #137be3;
+  border: none;
+  border-radius: 10px;
+  height: 25px;
+  width: 100px;
+  margin-left: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background-color: #004683;
+  transform: scale(1.12);
+}
+
+.List {
+  width: 300px;
+  margin: 40px auto;
+}
+
+.List-contact {
+  font-weight: bold;
+  margin-right: 15px;
+  margin: 0 0 10px 0;
+  text-align: left;
 }
